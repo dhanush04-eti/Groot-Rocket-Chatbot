@@ -113,12 +113,12 @@ export default function Home() {
         {
           role: "model",
           content: grootMessage ? grootMessage.trim() : "I am Groot...",
-          translation: rocketTranslation ? rocketTranslation.trim() : "Something went wrong, but Groot's not sure what."
+          translation: rocketTranslation ? rocketTranslation.trim() : "Something went wrong, but Groot's not sure what, RELOAD THE CHAT...."
         },
       ]);
     } catch (error) {
       console.error("Detailed error in sendMessage:", error);
-      let errorMessage = "Something went wrong, but Groot's not sure what.";
+      let errorMessage = "Something went wrong, but Groot's not sure what, RELOAD THE CHAT....";
       let shouldReset = false;
 
       if (error.message.includes("SAFETY")) {
